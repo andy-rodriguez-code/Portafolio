@@ -1,15 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Portafolio Andy Rodriguéz</title>
 </head>
 <body>
-    <header>
+    <!-- Header-->
+    <header class="header">
+        
+        <a href=""><img src="img/Logo.png" alt="" class="header__logo"></a>
+
+        <div class="sidebar">
+            <a  class="sidebar__link" onclick='cerrarSidebar()' href="#sobremi"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" fill="#fff" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            <a  class="sidebar__link" href="#sobremi">Sobre mi</a>
+            <a class="sidebar__link" href="#sobremi">Sobre mi</a>
+            <a class="sidebar__link" href="#skills">Skills</a>
+            <a class="sidebar__link" href="#hobbies">Hobbies</a>
+            <a class="sidebar__link" href="#formacion">Formación</a>
+            <a class="sidebar__link" href="#proyectos">Proyectos</a>
+            <a class="sidebar__link" href="#contacto">Contacto</a>
+        </div>
         <nav class="nav__menu">
-            <img src="img/Logo.png" alt="" class="nav__logo">
+            <a class="nav__link active" href="#sobremi">Sobre mi</a>
+            <a class="nav__link" href="#skills">Skills</a>
+            <a class="nav__link" href="#hobbies">Hobbies</a>
+            <a class="nav__link" href="#formacion">Formación</a>
+            <a class="nav__link" href="#proyectos">Proyectos</a>
+            <a class="nav__link" href="#contacto">Contacto</a>
+            <a class="link_hamburguesa"  onclick="abrirSidebar()"  href="#sobremi"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" fill="#fff" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
         </nav>
+
     </header>
+        <!-- Sobre mi-->
+        <section class="sobremi" id="sobremi">
+                <div class="box">
+                    <h1 class="sobremi__titulo">Hola yo soy</h1>
+                    <h2 class="sobremi__nombre">Andrés Jair Rodriguéz</h2>
+                    <h2 class="sobremi__habilidad">Y soy desarrollador <span>frontend</span></h2>
+                    <p class="sobremi__parrafo">
+                    De cariño me dicen Andy Rodríguez, vivo en Bucaramanga | Colombia.
+                    Actualmente, en mi carrera como desarrollador frontend, con el objetivo a fullstack he ingeniería de software.
+                    Convencido de que, con actitud positiva, ética laboral y deseo insaciable de superación, podrás lograr lo que 
+                    te propongas.
+                    </p>
+                    <div class="sobremi__iconos">
+                        <a class="icono"  href=""><i class='bx bxl-github '></i></a>
+                        <a class="icono" href=""><i class='bx bxl-linkedin-square '></i></a>
+                        <a class="icono" href=""><i class='bx bxl-facebook-circle '></i></a>
+                    </div>
+                    <button class="sobremi__buton">
+                        Desacargar cvs
+                    </button>
+                </div>
+                <div class="box__image">
+                    <img class="sobremi__img" src="img/Img-Andrés -Rodriguez.png" alt="">
+                </div>
+            </div> 
+        </section>
+        <div class="skills" id="skills">
+            <div class="skills__titulo">
+                <h2>Habilidades</h2>
+            </div>
+
+            <div class="skillbox">
+                <div class="slider__track">
+                    <div class="slider__img"><img src="img/Html.png" alt=""></div>
+                    <div class="slider__img"><img  src="img/Css-blanco.png" alt=""></div>
+                    <div class="slider__img"><img src="img/Javascrip.png" alt=""></div>
+                    <div class="slider__img"><img src="img/Illustrator.png" alt=""></div>
+                    <div class="slider__img"><img src="img/Photoshop.png" alt=""></div>
+                    <div class="slider__img"><img src="img/Wordpress.png" alt=""></div>
+    
+                    <div class="slider__img"><img src="img/Html.png" alt=""></div>
+                    <div class="slider__img"><img src="img/Css-blanco.png" alt=""></div>
+                    <div class="slider__img"><img src="img/Javascrip.png" alt=""></div>
+                    <div class="slider__img"><img src="img/Illustrator.png" alt=""></div>
+                    <div class="slider__img"><img src="img/Photoshop.png" alt=""></div>
+                    <div class="slider__img"><img src="img/Wordpress.png" alt=""></div>
+                </div>
+            </div>
+            
+        </div>
+    <script>
+     function abrirSidebar(){
+        const sidebarOpen = document.querySelector(".sidebar")
+        sidebarOpen.style.display='flex'
+     }
+     function cerrarSidebar(){
+        const sidebarClose =document.querySelector(".sidebar")
+        sidebarClose.style.display='none'
+     }
+     
+    </script>
 </body>
 </html>
