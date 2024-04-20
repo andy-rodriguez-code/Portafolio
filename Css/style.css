@@ -26,7 +26,11 @@ body{
 section{
     min-height:100vh ;
     padding: 8rem 9%;
-    background: var(--color-oscuro2);
+    background: rgb(7,33,70);
+background: -moz-linear-gradient(180deg, rgba(7,33,70,1) 11%, rgba(3,54,107,1) 49%);
+background: -webkit-linear-gradient(180deg, rgba(7,33,70,1) 11%, rgba(3,54,107,1) 49%);
+background: linear-gradient(180deg, rgba(7,33,70,1) 11%, rgba(3,54,107,1) 49%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#072146",endColorstr="#03366b",GradientType=1);
 }
 
 
@@ -154,7 +158,7 @@ section{
 /*---------------- Mis Skills-----------------------*/
 .skills{
     height: 70vh;
-    background: rgba(190, 190, 190, 0.548);
+    background:var(--color-texto);
     padding: 6rem 0;
 }
 
@@ -207,7 +211,6 @@ section{
     .link_hamburguesa{
         display: flex;
     }
-  
     .sobremi__img{
         width: 300px;
     }
