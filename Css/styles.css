@@ -1,0 +1,216 @@
+/* Estilos personalizados para el portafolio */
+/* Tailwind CSS se cargará via CDN */
+
+/* Variables CSS personalizadas */
+:root {
+  --primary-bg: #1A1A1A;
+  --secondary-bg: #2C2C2C;
+  --accent-orange: #FF9142;
+  --text-white: #FFFFFF;
+  --text-gray: #A8A8A8;
+  --blur-bg: rgba(255, 255, 255, 0.18);
+}
+
+/* Estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Syne', sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--text-white);
+  line-height: 1.6;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Efectos de blur personalizados */
+.blur-effect {
+  filter: blur(73.61px);
+  opacity: 0.18;
+}
+
+/* Botones personalizados */
+.btn-primary {
+  background-color: var(--accent-orange);
+  color: var(--text-white);
+  border-radius: 11px;
+  padding: 8px 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e67e2e;
+  transform: translateY(-2px);
+}
+
+/* Cards de servicios */
+.service-card {
+  background-color: var(--secondary-bg);
+  border-radius: 5px;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Animaciones de entrada */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Header específico */
+header {
+  transition: all 0.3s ease;
+}
+
+header.scrolled {
+  background-color: rgba(26, 26, 26, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Navegación activa */
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link.active {
+  color: var(--accent-orange) !important;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--accent-orange);
+  border-radius: 1px;
+}
+
+/* Botón CONTACTAME destacado */
+.contact-btn {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: var(--accent-orange);
+  border-color: var(--accent-orange);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 145, 66, 0.3);
+}
+
+/* Menú móvil mejorado */
+.mobile-menu {
+  background: rgba(26, 26, 26, 0.98);
+  backdrop-filter: blur(15px);
+  border-radius: 0 0 12px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: none;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-menu-btn {
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+/* Logo hover effect */
+.logo-container,
+.service-card {
+  transition: transform 0.3s ease;
+}
+
+.logo-container:hover,
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .mobile-hidden {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: block;
+  }
+  
+  /* Ajustes para móvil */
+  header nav {
+    padding: 1rem;
+  }
+  
+  .nav-link {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-menu {
+    display: none;
+  }
+  
+  /* Espaciado mejorado en desktop */
+  .desktop-nav {
+    gap: 2rem;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 0;
+  }
+}
+
+/* Swiper customizations */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--accent-orange) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--accent-orange) !important;
+}
