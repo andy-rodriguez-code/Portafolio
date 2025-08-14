@@ -53,7 +53,7 @@ function initTechCarousel() {
     });
 }
 
-// Carrusel 3D de proyectos
+// Carrusel de proyectos
 function initProjectsCarousel() {
     const projectsSwiperEl = document.querySelector('.projects-swiper');
     if (!projectsSwiperEl) return;
@@ -62,18 +62,9 @@ function initProjectsCarousel() {
     const hasEnoughSlides = slides.length >= 3;
     
     const projectsSwiper = new Swiper('.projects-swiper', {
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
+        slidesPerView: 1,
+        spaceBetween: 30,
         loop: hasEnoughSlides,
-        coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -83,26 +74,17 @@ function initProjectsCarousel() {
             clickable: true,
         },
         breakpoints: {
-            320: {
-                slidesPerView: 1,
-                coverflowEffect: {
-                    rotate: 30,
-                    depth: 50,
-                }
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
             },
             768: {
                 slidesPerView: 2,
-                coverflowEffect: {
-                    rotate: 40,
-                    depth: 80,
-                }
+                spaceBetween: 30,
             },
             1024: {
                 slidesPerView: 3,
-                coverflowEffect: {
-                    rotate: 50,
-                    depth: 100,
-                }
+                spaceBetween: 30,
             },
         }
     });
