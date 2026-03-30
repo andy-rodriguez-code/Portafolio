@@ -1,0 +1,30 @@
+{
+  "name": "Andy Code Tech",
+  "short_name": "AndyCode",
+  "description": "Portfolio de Andy Code Tech — Especialista en Desarrollo Web WordPress, SEO con IA y Automatización Digital en Colombia. Proyectos en economía, educación, turismo, gastronomía e inmobiliaria.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0F",
+  "theme_color": "#00F5C8",
+  "orientation": "any",
+  "lang": "es-CO",
+  "scope": "/",
+  "categories": ["business", "productivity", "technology"],
+  "keywords": "WordPress, SEO, automatización, desarrollo web, Colombia, economía digital, educación online, turismo",
+  "icons": [
+    {
+      "src": "/src/assets/img/andyfavicons.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "label": "Andy Code Tech — Portfolio Desarrollo Web y SEO Colombia"
+    }
+  ]
+}

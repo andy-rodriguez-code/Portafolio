@@ -2,17 +2,521 @@
 <html lang="es" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/public/andyfavicons.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andy Code Tech | WordPress & Automatización — Bucaramanga</title>
-    <meta name="description" content="Especialista en WordPress, E-commerce, Automatización y SEO. Portafolio de Andres Jiar Soto — andycodetech.com" />
-    <meta name="author" content="Andres Jiar Soto" />
+
+    <!-- ── Favicon & Icons ─────────────────────────────────── -->
+    <link rel="icon" type="image/png" href="/src/assets/img/andyfavicons.png" />
+    <link rel="apple-touch-icon" href="/src/assets/img/andyfavicons.png" />
+
+    <!-- ── Web App Manifest (PWA Signal) ───────────────────── -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ── Primary SEO ──────────────────────────────────────── -->
+    <title>Andy Code Tech | Desarrollo Web WordPress, SEO & Automatización — Colombia</title>
+    <meta name="description" content="Andy Code Tech — especialista en desarrollo web WordPress, SEO con IA, e-commerce, automatización digital y estrategia para sectores de economía, educación, turismo y gastronomía. Proyectos reales en Colombia y Latinoamérica con resultados +300% tráfico orgánico." />
+    <meta name="keywords" content="desarrollo web Colombia, WordPress Colombia, SEO Colombia, SEO Bucaramanga, economía digital, educación online, turismo Colombia, viajes Colombia, gastronomía digital, inmobiliaria digital, e-commerce WooCommerce, automatización N8n, SEO con inteligencia artificial, AEO, GEO, SGE, landing page Colombia, sitio web empresas, Head of SEO IA, Andy Code Tech, andycodetech" />
+    <meta name="author" content="Andres Jair Soto — Andy Code Tech" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://andycodetech.com/" />
+
+    <!-- ── Topical Authority — Sectorial Keywords ────────────── -->
+    <meta name="category" content="Desarrollo Web, SEO, Automatización, E-Commerce, Economía Digital, Educación Online, Turismo, Viajes Colombia, Gastronomía, Inmobiliaria" />
+    <meta name="classification" content="Business, Technology, Digital Marketing" />
+    <meta name="coverage" content="Colombia, Latinoamérica, Global" />
+    <meta name="target" content="empresas, emprendedores, startups, pymes, instituciones educativas, hoteles, restaurantes, constructoras, agencias" />
+    <meta name="subject" content="Desarrollo web profesional en Colombia con expertise en WordPress, SEO avanzado con IA, automatización de procesos digitales y e-commerce para empresas de economía, educación, turismo y gastronomía." />
+
+    <!-- ── Geo & Language ────────────────────────────────────── -->
+    <meta name="geo.region" content="CO-SAN" />
+    <meta name="geo.placename" content="Bucaramanga, Santander, Colombia" />
+    <meta name="geo.position" content="7.119349;-73.122742" />
+    <meta name="ICBM" content="7.119349, -73.122742" />
+    <meta name="language" content="Spanish" />
+    <meta name="content-language" content="es-CO" />
+    <link rel="alternate" hreflang="es-CO" href="https://andycodetech.com/" />
+    <link rel="alternate" hreflang="es" href="https://andycodetech.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://andycodetech.com/" />
+
+    <!-- ── Open Graph ────────────────────────────────────────── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://andycodetech.com/" />
+    <meta property="og:site_name" content="Andy Code Tech" />
+    <meta property="og:title" content="Andy Code Tech | Desarrollo Web, SEO & Automatización — Colombia" />
+    <meta property="og:description" content="Especialista en WordPress, SEO con IA y automatización digital para empresas de economía, educación, turismo, gastronomía e inmobiliaria en Colombia y Latinoamérica. +16 proyectos reales, +300% crecimiento orgánico." />
+    <meta property="og:image" content="https://andycodetech.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Andy Code Tech — Desarrollo Web WordPress y SEO con IA en Colombia" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="article:author" content="https://www.linkedin.com/in/andy-rodriguez-code/" />
+
+    <!-- ── Twitter / X Card ──────────────────────────────────── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@andycodetech" />
+    <meta name="twitter:creator" content="@andycodetech" />
+    <meta name="twitter:title" content="Andy Code Tech | WordPress, SEO & Automatización Colombia" />
+    <meta name="twitter:description" content="Desarrollo web, SEO con IA y automatización para economía, educación, turismo, gastronomía e inmobiliaria. Resultados reales en Colombia." />
+    <meta name="twitter:image" content="https://andycodetech.com/og-image.png" />
+    <meta name="twitter:image:alt" content="Andy Code Tech — WordPress y SEO Colombia" />
+
+    <!-- ── AI Crawlers (AEO/GEO) ─────────────────────────────── -->
+    <!-- Permite a ChatGPT, Perplexity, Claude y Gemini indexar el contenido -->
+    <meta name="ai-content-declaration" content="human-generated, expert-authored" />
+
+    <!-- ── Theme & PWA ───────────────────────────────────────── -->
+    <meta name="theme-color" content="#00F5C8" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Andy Code Tech" />
+    <meta name="application-name" content="Andy Code Tech" />
+
+    <!-- ── Performance: Preload Critical Resources ───────────── -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="dns-prefetch" href="https://www.linkedin.com" />
+    <link rel="dns-prefetch" href="https://github.com" />
+
+    <!-- ── Fonts ─────────────────────────────────────────────── -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- ── JSON-LD Structured Data (Schema.org) ────────────────
+         Estrategia AEO: múltiples tipos para máxima autoridad semántica
+         Cubre: Person, WebSite, ProfessionalService, FAQPage, ItemList
+    ──────────────────────────────────────────────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+
+        {
+          "@type": "Person",
+          "@id": "https://andycodetech.com/#andres-jair-soto",
+          "name": "Andres Jair Soto",
+          "alternateName": ["Andy Code Tech", "Andy Rodriguez Code", "AndyCodeTech", "Andres Soto"],
+          "jobTitle": "Especialista en Desarrollo Web WordPress, SEO con IA y Automatización Digital",
+          "description": "Especialista con +8 años de experiencia en desarrollo web WordPress, SEO con inteligencia artificial, e-commerce y automatización digital. Ha liderado proyectos en sectores de economía, educación, turismo, viajes, gastronomía e inmobiliaria en Colombia y Latinoamérica.",
+          "url": "https://andycodetech.com",
+          "email": "andycodetech@gmail.com",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://andycodetech.com/og-image.png",
+            "width": 1200,
+            "height": 630
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bucaramanga",
+            "addressRegion": "Santander",
+            "addressCountry": "CO",
+            "postalCode": "680001"
+          },
+          "sameAs": [
+            "https://andycodetech.com",
+            "https://www.linkedin.com/in/andy-rodriguez-code/",
+            "https://github.com/andy-rodriguez-code"
+          ],
+          "knowsAbout": [
+            "Desarrollo Web WordPress",
+            "SEO con Inteligencia Artificial",
+            "AEO (Answer Engine Optimization)",
+            "GEO (Generative Engine Optimization)",
+            "SGE (Search Generative Experience)",
+            "E-commerce WooCommerce",
+            "Automatización con N8n y Python",
+            "Economía Digital",
+            "Educación Online",
+            "Turismo y Viajes Colombia",
+            "Gastronomía Digital",
+            "Inmobiliaria Digital",
+            "Hotelería y Turismo",
+            "Analítica Predictiva",
+            "E-E-A-T Optimization",
+            "Core Web Vitals",
+            "Bitrix24 y Kommo CRM",
+            "Digital PR",
+            "Landing Pages de Alto Rendimiento"
+          ],
+          "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Desarrollador Web y Estratega Digital",
+            "description": "Creación de sitios web profesionales en WordPress, estrategia SEO avanzada con IA y automatización de procesos digitales para empresas en Colombia.",
+            "occupationLocation": [
+              {
+                "@type": "Country",
+                "name": "Colombia"
+              },
+              {
+                "@type": "AdministrativeArea",
+                "name": "Latinoamérica"
+              }
+            ],
+            "skills": "WordPress, WooCommerce, SEO, IA, AEO, GEO, Python, N8n, Bitrix24, React, Análítica Predictiva"
+          },
+          "award": [
+            "+300% crecimiento orgánico en proyectos de economía y turismo",
+            "+16 proyectos web entregados en Colombia y Latinoamérica"
+          ]
+        },
+
+        {
+          "@type": "WebSite",
+          "@id": "https://andycodetech.com/#website",
+          "url": "https://andycodetech.com",
+          "name": "Andy Code Tech",
+          "description": "Portfolio de Andy Code Tech — especialista en desarrollo web WordPress, SEO con IA y automatización para economía, educación, turismo y gastronomía en Colombia.",
+          "author": {
+            "@id": "https://andycodetech.com/#andres-jair-soto"
+          },
+          "inLanguage": "es-CO",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://andycodetech.com/?s={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://andycodetech.com/#service",
+          "name": "Andy Code Tech",
+          "url": "https://andycodetech.com",
+          "email": "andycodetech@gmail.com",
+          "telephone": "+57-315-000-0000",
+          "description": "Desarrollo web profesional en WordPress, SEO con IA, e-commerce WooCommerce y automatización digital para empresas de economía, educación, turismo, viajes, gastronomía e inmobiliaria.",
+          "areaServed": ["Colombia", "Latinoamérica", "Global"],
+          "serviceType": [
+            "Desarrollo Web WordPress",
+            "SEO con Inteligencia Artificial",
+            "E-Commerce WooCommerce",
+            "Automatización Digital",
+            "Landing Pages",
+            "Estrategia Digital"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bucaramanga",
+            "addressRegion": "Santander",
+            "addressCountry": "CO"
+          },
+          "founder": {
+            "@id": "https://andycodetech.com/#andres-jair-soto"
+          },
+          "priceRange": "$$",
+          "currenciesAccepted": "COP, USD",
+          "paymentAccepted": "Transferencia bancaria, PayPal",
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Desarrollo Web y Marketing Digital",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Desarrollo Web WordPress",
+                  "description": "Sitios web corporativos, portales institucionales y plataformas para empresas de economía, educación y turismo en Colombia. WordPress custom, velocidad optimizada y mobile-first."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "E-Commerce WooCommerce",
+                  "description": "Tiendas online optimizadas para conversión con catálogos inteligentes, pasarelas de pago colombianas y gestión automatizada de inventarios."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "SEO con IA y AEO",
+                  "description": "Posicionamiento en Google, ChatGPT y Perplexity. Estrategia de contenido con topical authority para sectores de economía, educación, viajes y gastronomía."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Automatización y Bots",
+                  "description": "Flujos automatizados con N8n, Manychat, Bitrix24 y Kommo para ventas, soporte y procesos administrativos de empresas colombianas."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Landing Pages de Alto Rendimiento",
+                  "description": "Páginas de aterrizaje de alta conversión para proyectos inmobiliarios, eventos turísticos, instituciones educativas y restaurantes."
+                }
+              }
+            ]
+          }
+        },
+
+        {
+          "@type": "FAQPage",
+          "@id": "https://andycodetech.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Qué sectores atiende Andy Code Tech?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Andy Code Tech tiene experiencia con empresas de economía (cajas de compensación, fintech), educación (plataformas e-learning, colegios), turismo y viajes (hoteles, cabañas, agencias), gastronomía (restaurantes, clubes gourmet), inmobiliaria (constructoras, agencias de finca raíz), salud y bienestar, e industria."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué es AEO y por qué lo necesita mi empresa en Colombia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AEO (Answer Engine Optimization) es la estrategia para aparecer en las respuestas de ChatGPT, Perplexity y Gemini cuando tus clientes hacen preguntas sobre economía, turismo, educación o tus servicios. A diferencia del SEO tradicional, el AEO posiciona tu marca directamente en los resultados de IA generativa, captando audiencias que ya no usan Google de manera convencional."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuánto cuesta hacer una página web en Colombia con WordPress?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El costo de una página web profesional en Colombia con WordPress varía según la complejidad: landing pages desde 800 USD, sitios corporativos desde 1,500 USD, y portales e-commerce desde 2,500 USD. Todos incluyen optimización SEO técnica, diseño responsive y configuración de analytics."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Hacen sitios web para hoteles, restaurantes o proyectos turísticos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Andy Code Tech tiene proyectos exitosos en hotelería y turismo como Campestre Miranda (Atlántico), e industria gastronómica como El Club del Asado (Bogotá). Desarrollamos plataformas con sistemas de reservas, galerías multimedia, integración con OTAs y optimización para búsquedas de viajes en Colombia."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Pueden crear plataformas educativas online?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Desarrollamos plataformas e-learning, portales de cursos, sistemas de membresías y sitios institucionales para empresa educativas. Trabajamos con WordPress + LMS, WooCommerce para venta de cursos y automatización de matrículas con N8n y Bitrix24."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Trabajan con automatización para ventas en el sector de viajes y turismo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Implementamos flujos automáticos de WhatsApp con Manychat, CRM con Kommo y Bitrix24, y chatbots para atención al cliente en hoteles, agencias de viajes y atractivos turísticos. Automatizamos cotizaciones, reservas y seguimiento de clientes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿En cuánto tiempo entregan un sitio web profesional?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Una landing page profesional se entrega en 5-7 días hábiles. Un sitio corporativo en WordPress en 15-25 días. Un e-commerce WooCommerce completo en 25-40 días. Todos los proyectos incluyen optimización SEO técnica inicial y capacitación de uso."
+              }
+            }
+          ]
+        },
+
+        {
+          "@type": "ItemList",
+          "@id": "https://andycodetech.com/#proyectos",
+          "name": "Portafolio de Proyectos Web — Andy Code Tech",
+          "description": "Proyectos reales de desarrollo web WordPress, e-commerce y plataformas digitales en Colombia para sectores de economía, educación, turismo, gastronomía e inmobiliaria.",
+          "numberOfItems": 16,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "WebSite",
+                "name": "Comfacundi — Caja de Compensación",
+                "url": "https://comfacundi.com.co/",
+                "description": "Plataforma integral para una de las cajas de compensación más importantes de Colombia. Economía social, salud y bienestar con arquitectura escalable.",
+                "keywords": "caja de compensación, economía social Colombia, bienestar laboral, WordPress empresarial"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "WebSite",
+                "name": "Campestre Miranda — Hotelería y Turismo",
+                "url": "https://www.campestremiranda.com/",
+                "description": "Alojamiento campestre en Sabanagrande, Atlántico. Sistema de reservas y galería multimedia para ecoturismo cerca de Barranquilla.",
+                "keywords": "hotelería Colombia, turismo Atlántico, cabaña campestre, viajes Colombia, ecoturismo, reservas online hotel"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "WebSite",
+                "name": "Xigua — Salud y Educación en Bienestar",
+                "url": "https://www.xigua.com.co/",
+                "description": "Plataforma e-learning de talleres y acompañamiento en alimentación consciente, ejercicio y manejo de estrés. Educación para individuos y corporativos.",
+                "keywords": "educación bienestar, plataforma e-learning Colombia, talleres salud, educación online WordPress"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "WebSite",
+                "name": "El Club del Asado — Gastronomía Bogotá",
+                "url": "https://elclubdelasado.com.co/",
+                "description": "E-commerce y portal de membresías para restaurante gourmet en Bogotá. Cortes selectos, eventos de parrillada y experiencias gastronómicas.",
+                "keywords": "gastronomía Bogotá, restaurante e-commerce, portal membresías, WooCommerce restaurante"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "item": {
+                "@type": "WebSite",
+                "name": "Cubyco — Inmobiliaria Digital",
+                "url": "https://cubyco.co/",
+                "description": "Inmobiliaria digital con tours virtuales 360° y visualización 3D. SEO optimizado para búsquedas de vivienda en Colombia.",
+                "keywords": "inmobiliaria Colombia, tours virtuales, real estate digital, vivienda online"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "item": {
+                "@type": "WebSite",
+                "name": "Trendyphotographic — E-Commerce Servicios",
+                "url": "https://trendyphotographic.com/",
+                "description": "E-commerce premium para servicios fotográficos con sistema de reservas y descarga de assets digitales.",
+                "keywords": "fotografía profesional e-commerce, servicios multimedia, WooCommerce, booking online"
+              }
+            }
+          ]
+        },
+
+        {
+          "@type": "AggregateRating",
+          "@id": "https://andycodetech.com/#aggregate-rating",
+          "itemReviewed": {
+            "@id": "https://andycodetech.com/#service"
+          },
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": "16",
+          "reviewCount": "3"
+        },
+
+        {
+          "@type": "Review",
+          "@id": "https://andycodetech.com/#review-1",
+          "itemReviewed": {
+            "@id": "https://andycodetech.com/#service"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "María Fernández",
+            "jobTitle": "Directora Digital",
+            "worksFor": { "@type": "Organization", "name": "Grupo Ariansi" }
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "El nivel de precisión en los sistemas que construyó para nosotros fue excepcional. Andy es ahora nuestro partner principal para todos los proyectos de automatización digital.",
+          "datePublished": "2025-12-01",
+          "inLanguage": "es-CO"
+        },
+
+        {
+          "@type": "Review",
+          "@id": "https://andycodetech.com/#review-2",
+          "itemReviewed": {
+            "@id": "https://andycodetech.com/#service"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Carlos Mendoza",
+            "jobTitle": "CTO",
+            "worksFor": { "@type": "Organization", "name": "TechFlow CO" }
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Técnicamente sólido y creativamente atrevido. Una combinación rara en la industria del desarrollo web en Colombia.",
+          "datePublished": "2025-11-15",
+          "inLanguage": "es-CO"
+        },
+
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://andycodetech.com/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://andycodetech.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Sobre Andy Code Tech",
+              "item": "https://andycodetech.com/#sobre-mi"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Servicios de Desarrollo Web y SEO",
+              "item": "https://andycodetech.com/#servicios"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Proyectos",
+              "item": "https://andycodetech.com/#proyectos"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Tecnologías",
+              "item": "https://andycodetech.com/#tecnologias"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Testimonios",
+              "item": "https://andycodetech.com/#testimonios"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Contacto",
+              "item": "https://andycodetech.com/#contacto"
+            }
+          ]
+        }
+
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

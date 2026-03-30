@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+>
+
+  <!-- ── Página Principal ──────────────────────────────────── -->
+  <url>
+    <loc>https://andycodetech.com/</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://andycodetech.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://andycodetech.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://andycodetech.com/" />
+    <image:image>
+      <image:loc>https://andycodetech.com/og-image.png</image:loc>
+      <image:caption>Andy Code Tech — Desarrollo Web WordPress, SEO con IA y Automatización en Colombia</image:caption>
+      <image:title>Andy Code Tech | Portfolio Especialista WordPress y SEO</image:title>
+      <image:geo_location>Bucaramanga, Santander, Colombia</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- ── Sección: Sobre Mí ──────────────────────────────────── -->
+  <url>
+    <loc>https://andycodetech.com/#sobre-mi</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ── Sección: Servicios ─────────────────────────────────── -->
+  <url>
+    <loc>https://andycodetech.com/#servicios</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- ── Sección: Proyectos ─────────────────────────────────── -->
+  <url>
+    <loc>https://andycodetech.com/#proyectos</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <!-- Proyectos con imágenes para indexación en Google Images -->
+    <image:image>
+      <image:loc>https://comfacundi.com.co/</image:loc>
+      <image:caption>Comfacundi — Plataforma Caja de Compensación Colombia. Economía social y bienestar.</image:caption>
+      <image:title>Comfacundi — Desarrollo Web WordPress para Economía Social</image:title>
+    </image:image>
+    <image:image>
+      <image:caption>Campestre Miranda — Hotelería y Turismo en Atlántico, Colombia. Reservas online.</image:caption>
+      <image:title>Campestre Miranda — Web para Turismo y Viajes Colombia</image:title>
+    </image:image>
+    <image:image>
+      <image:caption>Xigua — Plataforma Educación y Bienestar. Talleres online y e-learning Colombia.</image:caption>
+      <image:title>Xigua — Web Educación Online Colombia</image:title>
+    </image:image>
+    <image:image>
+      <image:caption>El Club del Asado — E-Commerce Gastronomía Bogotá. Restaurante y membresías.</image:caption>
+      <image:title>El Club del Asado — Web Gastronomía Colombia WooCommerce</image:title>
+    </image:image>
+  </url>
+
+  <!-- ── Sección: Tecnologías ───────────────────────────────── -->
+  <url>
+    <loc>https://andycodetech.com/#tecnologias</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ── Sección: Testimonios ───────────────────────────────── -->
+  <url>
+    <loc>https://andycodetech.com/#testimonios</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ── Sección: Contacto ──────────────────────────────────── -->
+  <url>
+    <loc>https://andycodetech.com/#contacto</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>

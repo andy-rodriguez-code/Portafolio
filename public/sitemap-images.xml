@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+  <url>
+    <loc>https://andycodetech.com/</loc>
+    <image:image>
+      <image:loc>https://andycodetech.com/og-image.png</image:loc>
+      <image:caption>Andy Code Tech — Especialista en Desarrollo Web WordPress, SEO con IA, E-Commerce y Automatización Digital en Colombia. Proyectos en economía, educación, turismo, gastronomía e inmobiliaria.</image:caption>
+      <image:title>Andy Code Tech | Desarrollo Web & SEO Colombia</image:title>
+      <image:geo_location>Bucaramanga, Santander, Colombia</image:geo_location>
+      <image:license>https://andycodetech.com/</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://andycodetech.com/src/assets/img/Andy-code.png</image:loc>
+      <image:caption>Andres Jair Soto — Andy Code Tech. Especialista WordPress, SEO IA y Automatización en Colombia.</image:caption>
+      <image:title>Andres Jair Soto — Andy Code Tech Bucaramanga Colombia</image:title>
+      <image:geo_location>Bucaramanga, Santander, Colombia</image:geo_location>
+    </image:image>
+  </url>
+</urlset>

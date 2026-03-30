@@ -1,0 +1,73 @@
+# ═══════════════════════════════════════════════════════════════
+# Andy Code Tech — robots.txt
+# Optimizado para Google, Bing + Crawlers de IA (AEO/GEO)
+# ═══════════════════════════════════════════════════════════════
+
+# ── Googlebot ────────────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+Disallow: /node_modules/
+Disallow: /dist/
+Crawl-delay: 10
+
+# ── Googlebot Images (OG + Structured Data) ─────────────────
+User-agent: Googlebot-Image
+Allow: /src/assets/img/
+Allow: /public/
+Disallow:
+
+# ── Bingbot ──────────────────────────────────────────────────
+User-agent: Bingbot
+Allow: /
+Disallow: /node_modules/
+Disallow: /dist/
+Crawl-delay: 10
+
+# ── GPTBot (OpenAI / ChatGPT) ────────────────────────────────
+# Permitido: queremos estar en las respuestas de ChatGPT
+User-agent: GPTBot
+Allow: /
+
+# ── OAI-SearchBot (OpenAI SearchGPT) ──────────────────────────
+User-agent: OAI-SearchBot
+Allow: /
+
+# ── PerplexityBot ────────────────────────────────────────────
+User-agent: PerplexityBot
+Allow: /
+
+# ── ClaudeBot (Anthropic) ────────────────────────────────────
+User-agent: ClaudeBot
+Allow: /
+
+# ── Gemini / Google Extended ─────────────────────────────────
+User-agent: Google-Extended
+Allow: /
+
+# ── Meta AI (FacebookExternalHit) ────────────────────────────
+User-agent: FacebookExternalHit
+Allow: /
+
+# ── YouBot (You.com AI) ──────────────────────────────────────
+User-agent: YouBot
+Allow: /
+
+# ── Applebot ─────────────────────────────────────────────────
+User-agent: Applebot
+Allow: /
+
+# ── Reglas Generales ─────────────────────────────────────────
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /*.json$
+Disallow: /*.ts$
+Disallow: /*.tsx$
+
+# ── Sitemap ──────────────────────────────────────────────────
+Sitemap: https://andycodetech.com/sitemap.xml
+Sitemap: https://andycodetech.com/sitemap-images.xml
+
+# Host canónico
+Host: andycodetech.com

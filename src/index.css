@@ -79,6 +79,7 @@
   html {
     color-scheme: dark;
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
   }
   body {
     @apply bg-bg-base text-text font-body antialiased overflow-x-hidden;
@@ -201,13 +202,3 @@
 }
 .work-card.active .work-card-info { transform: translateY(0); opacity: 1; }
 
-/* ── Scroll Reveal ──────────────────────────────────── */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
