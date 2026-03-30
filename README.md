@@ -170,6 +170,3 @@ Mi enfoque está en **aumentar la eficiencia operativa y mejorar la experiencia 
 - https://pradera-viva.constructoracamu.com/
 - https://kronus.com.co/
 - https://elclubdelasado.com.co/
-
-
-
