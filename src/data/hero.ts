@@ -4,16 +4,21 @@ export interface Stat {
 }
 
 export const stats: Stat[] = [
-  { value: '+300%', label: 'Crecimiento Orgánico' },
-  { value: '15+',   label: 'Liderando equipos' },
-  { value: '+8',    label: 'Años Experience' },
+  { value: '+45%', label: 'Crecimiento Orgánico' },
+  { value: '+3',   label: 'Años Experiencia' },
+  { value: '+17',    label: 'Proyectos Realizados' },
 ]
 
 export const typewriterTexts: string[] = [
-  'Head of SEO & IA',
-  'AEO / GEO Optimization',
-  'SGE Strategy (Google)',
-  'Automatización con Python',
-  'Analítica Predictiva',
-  'Auditoría Técnica Avanzada',
+  'WordPress Personalizado ',
+  'Plugins Personalizado ',
+  'Elementor PRO',
+  'WooCommerce',
+  'Desarrollo ala medida',
+  'Automatizaciones con Zapier',
+  'Integración con sitios',
+  'Captación de leeds con Kommo',
+  'Chatboots con Kommo y ManyChat',
+  'Administración de hosting y cPanel.',
+  
 ]
