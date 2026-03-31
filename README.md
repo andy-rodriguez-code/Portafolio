@@ -9,12 +9,12 @@
 
 ## 👨‍💻 PERFIL PROFESIONAL
 
-Tecnólogo en Análisis y Desarrollo de Sistemas de Información, con más de **2 años de experiencia especializada en desarrollo web con WordPress + Elementor** y **automatización de flujos de trabajo** mediante herramientas como **Kommo, Manychat y Zapier**.
+Tecnólogo en Análisis y Desarrollo de Sistemas de Información, con más de **3 años de experiencia especializada en desarrollo web con WordPress + Elementor** y **automatización de flujos de trabajo** mediante herramientas como **Kommo, Manychat y Zapier**.
 
 Mi enfoque está en **aumentar la eficiencia operativa y mejorar la experiencia del cliente** a través de integraciones estratégicas y diseño web optimizado. Tengo una mentalidad proactiva, orientada a resultados y comprometida con la mejora continua.
 
 - 🔹 Capacidad comprobada para **reducir tiempos manuales hasta en un 80%** mediante automatización.  
-- 🔹 Sitios optimizados que han logrado **incrementar el tráfico orgánico hasta un 40%** con técnicas SEO aplicadas.  
+- 🔹 Sitios optimizados que han logrado **incrementar el tráfico orgánico hasta un 45%** con técnicas SEO aplicadas.  
 - 🔹 Resolución ágil de problemas técnicos críticos, asegurando **99% de disponibilidad web**.
 
 ---
